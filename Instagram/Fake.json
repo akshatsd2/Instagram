@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "data": [
+             {
+             "user_id": "1001",
+             "user_name": "Azeem Khan",
+             "user_profile_pic": "http://editsoft.in.s3.amazonaws.com/img/team/azeem.jpg",
+             "is_video": false,
+             "image_url": "http://editsoft.in.s3.amazonaws.com/img/gateway-thumb.JPG"
+             },
+             {
+             "user_id": "1002",
+             "user_name": "Tech Slides",
+             "user_profile_pic": "http://editsoft.in.s3.amazonaws.com/img/team/azeem.jpg",
+             "is_video": true,
+             "video_url": "http://techslides.com/demos/sample-videos/small.mp4"
+             },
+             {
+             "user_id": "1003",
+             "user_name": "Nituj Gupta",
+             "user_profile_pic": "http://editsoft.in.s3.amazonaws.com/img/team/nituj.jpg",
+             "is_video": false,
+             "image_url": "http://editsoft.in.s3.amazonaws.com/img/harlem-thumb.jpg"
+             }
+             ]
+}

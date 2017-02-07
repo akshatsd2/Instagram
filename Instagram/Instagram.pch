@@ -1,0 +1,23 @@
+//
+//  Instagram.pch
+//  Instagram
+//
+//  Created by Akshat Mittal on 05/02/17.
+//  Copyright © 2017 Akshat Mittal. All rights reserved.
+//
+
+#import "Model.h"
+#import "CacheClass.h"
+#ifndef Instagram_pch
+#define Instagram_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//****************************  Web Services *************************************//
+
+#define kServerURL @"https://demo5910746.mockable.io/"
+#define kloadSampleData @"sampleData"
+
+#endif /* Instagram_pch */

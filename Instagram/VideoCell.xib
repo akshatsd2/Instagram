@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="200" id="Ije-pv-0ge" customClass="VideoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ije-pv-0ge" id="K97-Nc-8EW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRn-cq-acN">
+                        <rect key="frame" x="0.0" y="5" width="375" height="189.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fRn-cq-acN" secondAttribute="bottom" constant="5" id="EAY-DC-63P"/>
+                    <constraint firstAttribute="trailing" secondItem="fRn-cq-acN" secondAttribute="trailing" id="hem-Z3-o2h"/>
+                    <constraint firstItem="fRn-cq-acN" firstAttribute="leading" secondItem="K97-Nc-8EW" secondAttribute="leading" id="vRU-QY-uie"/>
+                    <constraint firstItem="fRn-cq-acN" firstAttribute="top" secondItem="K97-Nc-8EW" secondAttribute="top" constant="5" id="zSj-zh-VWt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="view" destination="fRn-cq-acN" id="AOR-n0-R9g"/>
+            </connections>
+            <point key="canvasLocation" x="-113.5" y="33"/>
+        </tableViewCell>
+    </objects>
+</document>
