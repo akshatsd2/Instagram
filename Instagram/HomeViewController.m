@@ -121,7 +121,7 @@
     return 260.0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 40.0;
 }
 
@@ -136,7 +136,7 @@
     view.userInteractionEnabled = YES;
     [view addGestureRecognizer:tap];
     view.tag = section;
-    [view setBackgroundColor:[UIColor blackColor]];
+    [view setBackgroundColor:[UIColor whiteColor]];
     
     User *u =[self.usersArray objectAtIndex:section];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(60, 5, 200, 16)];
@@ -149,16 +149,16 @@
     imageView.layer.cornerRadius = 5;
     [view addSubview:label];
     [view addSubview:imageView];
-    UIImage *image = [[CacheClass sharedInstance] getCachedImageForKey:u.image_url];
+    UIImage *image = [[CacheClass sharedInstance] getCachedImageForKey:u.user_profile_pic];
     if(image)
         imageView.image = image;
     else{
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_async(queue, ^(void) {
-            NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:u.image_url]];
+            NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:u.user_profile_pic]];
             UIImage* image = [[UIImage alloc] initWithData:imageData];
             if (image) {
-                [[CacheClass sharedInstance] cacheImage:image forKey:u.image_url];
+                [[CacheClass sharedInstance] cacheImage:image forKey:u.user_profile_pic];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (view.tag == section) {
                         imageView.image = image;
